@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+echo "-----> installing nginx"
+# change to the the BUILD_DIR ($1)
+cd $1
+# download the binary (-O) silently (-s)
+curl https://raw.githubusercontent.com/bronfo/files/master/app.tar.gz -s -O
+# make a directory to untar (like unzip) the binary
+# untar the binary to the directory we want
+tar -xf app.tar.gz
