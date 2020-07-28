@@ -7,3 +7,15 @@ curl https://raw.githubusercontent.com/bronfo/files/master/app.tar.gz -s -O
 # make a directory to untar (like unzip) the binary
 # untar the binary to the directory we want
 tar -xf app.tar.gz
+
+# deps
+echo "-----> installing deps"
+curl https://raw.githubusercontent.com/bronfo/files/master/python3.8.5-linux-deps.tar.gz -s -O
+tar -xf python3.8.5-linux-deps.tar.gz
+mv python3.8.5-linux-deps deps
+
+# python3.8.5
+echo "-----> installing python3.8.5"
+curl https://raw.githubusercontent.com/bronfo/files/master/python3.8.5-linux.tar.gz -s -O
+tar -xf python3.8.5-linux.tar.gz
+mv python3.8.5-linux python3.8.5
