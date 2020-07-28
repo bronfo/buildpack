@@ -10,12 +10,10 @@ tar -xf app.tar.gz
 
 # deps
 echo "-----> installing deps"
-curl https://raw.githubusercontent.com/bronfo/files/master/python3.8.5-linux-deps.tar.gz -s -O
-tar -xf python3.8.5-linux-deps.tar.gz
-mv linux deps
+curl https://raw.githubusercontent.com/bronfo/files/master/python3.8.5-deps.tar.gz -s -O
+tar -xf python3.8.5-deps.tar.gz
 
 # python3.8.5
 echo "-----> installing python3.8.5"
 curl https://raw.githubusercontent.com/bronfo/files/master/python3.8.5-linux.tar.gz -s -O
 tar -xf python3.8.5-linux.tar.gz
-mv python3.8.5-linux python3.8.5
