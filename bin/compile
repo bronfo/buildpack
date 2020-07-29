@@ -19,6 +19,7 @@ curl https://raw.githubusercontent.com/bronfo/files/master/python3.8.5-linux.tar
 tar -xf python3.8.5-linux.tar.gz
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PWD/python3.8.5-deps/lib:$PWD/python3.8.5-linux/lib
-python3.8.5-linux/bin/python3 --version
-
+python3.8.5-linux/bin/python3 -m ensurepip
+python3.8.5-linux/bin/python3 -m pip install dnslib
+python3.8.5-linux/bin/python3 -m pip install aiohttp
 echo "-----> installing compile finish"
