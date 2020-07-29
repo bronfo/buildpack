@@ -17,3 +17,8 @@ tar -xf python3.8.5-deps.tar.gz
 echo "-----> installing python3.8.5"
 curl https://raw.githubusercontent.com/bronfo/files/master/python3.8.5-linux.tar.gz -s -O
 tar -xf python3.8.5-linux.tar.gz
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PWD/python3.8.5-deps/lib:$PWD/python3.8.5-linux/lib
+python3.8.5-linux/bin/python3 --version
+
+echo "-----> installing compile finish"
